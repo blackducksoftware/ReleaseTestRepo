@@ -29,6 +29,7 @@ hs_err_pid*
 bin/
 .idea
 out/
+*.iml
 
 # build tool
 .gradle/
