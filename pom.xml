@@ -4,7 +4,7 @@
 
     <groupId>com.synopsys.integration</groupId>
     <artifactId>release-test</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
 
     <dependencies>
