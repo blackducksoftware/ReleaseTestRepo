@@ -16,9 +16,15 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.9'
 }
 
-task buildScript(type: Copy) {
+task buildUnversionedScript(type: Copy) {
 	from 'src/main/resources/blackduck-docker-inspector.sh'
 	into 'build'
+}
+
+task buildScripts(type: Copy, dependsOn: buildUnversionedScript) {
+    from 'build/blackduck-docker-inspector.sh'
+    into 'build'
+    rename('blackduck-docker-inspector.sh', "blackduck-docker-inspector-${version}.sh")
 }
 
 dependencies {
