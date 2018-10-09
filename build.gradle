@@ -16,6 +16,11 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.9'
 }
 
+task buildScript(type: Copy) {
+	from 'src/main/resources/blackduck-docker-inspector.sh'
+	into 'build'
+}
+
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.12'
 }
