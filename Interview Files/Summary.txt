@@ -1,0 +1,26 @@
+Counting lines of code in Java source is not quite as simple as it seems.
+ 
+Please write a utility that counts the number of lines of actual code in a Java
+source file. For the purpose of this exercise, a line is counted if it contains
+something other than whitespace or text in a comment.
+ 
+Remember that Java comments are either // to the end of line, or /* to the next
+*/. The block comments do not nest. There may be multiple /* … */ comments on a
+line. Whitespace includes tabs, spaces, carriage returns, and vertical tabs.
+ 
+This problem can take well over an hour to fully complete. If you do not think
+there will be sufficient time to handle all cases, please consider starting with
+smaller tasks that can show some progress.
+ 
+Such as:
+ 
+- Count all the lines in a file.
+ 
+- Omit lines that are just whitespace or single line comments.
+ 
+- Omit lines that are part of multiple line comments.
+ 
+- Handle edge cases (comments can start at the end of lines, nested comments)
+ 
+Please keep in mind - being able to demo executing code and discuss your work is
+vastly more important than completing the utility.
