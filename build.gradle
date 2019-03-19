@@ -7,18 +7,10 @@ buildscript {
     dependencies { classpath 'com.blackducksoftware.integration:common-gradle-plugin:0.0.+' }
 }
 
-project.ext.moduleName = 'com.synopsys.integration.release-test'
-project.ext.javaUseAutoModuleName = 'true'
-project.ext.junitShowStandardStreams = 'true'
-
 group 'com.synopsys.integration'
 version = '0.0.41-SNAPSHOT'
 
 apply plugin: 'com.blackducksoftware.integration.library'
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.9'
-}
 
 task buildUnversionedScript(type: Copy) {
 	from 'src/main/resources/blackduck-docker-inspector.sh'
