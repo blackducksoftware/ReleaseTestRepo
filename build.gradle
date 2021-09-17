@@ -1,10 +1,13 @@
 buildscript {
     apply from: 'https://raw.githubusercontent.com/blackducksoftware/integration-resources/master/gradle_common/buildscript-repositories.gradle', to: buildscript
-    apply from: 'https://raw.githubusercontent.com/blackducksoftware/integration-resources/master/gradle_common/buildscript-dependencies.gradle', to: buildscript
+    ////////// START BUILDSCRIPT DEPENDENCY //////////
+dependencies { classpath "com.synopsys.integration:common-gradle-plugin:1.11.1" }
+
+////////// END BUILDSCRIPT DEPENDENCY //////////
 }
 
 group 'com.synopsys.integration'
-version = '0.0.68-SNAPSHOT'
+version = '0.0.68'
 
 apply plugin: 'com.synopsys.integration.library'
 
