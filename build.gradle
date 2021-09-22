@@ -7,7 +7,7 @@ dependencies { classpath "com.synopsys.integration:common-gradle-plugin:1.11.1" 
 }
 
 group 'com.synopsys.integration'
-version = '0.0.74'
+version = '0.0.75-SNAPSHOT'
 
 apply plugin: 'com.synopsys.integration.library'
 
