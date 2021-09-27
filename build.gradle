@@ -4,7 +4,7 @@ buildscript {
 }
 
 group 'com.synopsys.integration'
-version = '0.0.79'
+version = '0.0.80-SNAPSHOT'
 
 apply plugin: 'com.synopsys.integration.library'
 
