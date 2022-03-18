@@ -14,7 +14,7 @@ plugins {
 }
 
 group 'com.synopsys.integration'
-version = '0.0.128-SNAPSHOT'
+version = '0.0.128'
 
 apply plugin: 'com.synopsys.integration.library'
 
