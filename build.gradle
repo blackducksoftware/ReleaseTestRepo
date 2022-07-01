@@ -14,7 +14,7 @@ plugins {
 }
 
 group 'com.synopsys.integration'
-version = '0.1.134-SIGQA9-SNAPSHOT'
+version = '0.1.134-SIGQA9'
 
 apply plugin: 'com.synopsys.integration.library'
 
